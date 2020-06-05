@@ -14,9 +14,7 @@
         "url": "git@116.62.100.239:jtl3d-faces/picasso-recordsystem.git"
     },
     "scripts": {
-        "test": "echo \"Error: run tests from root\" && exit 1",
-        "prepublishOnly": "npx q-scripts ci",
-        "prepack": "npx q-scripts prepack"
+        "prepublishOnly": "npx q-scripts ci"
     },
     "browserslist": [
         "defaults"
