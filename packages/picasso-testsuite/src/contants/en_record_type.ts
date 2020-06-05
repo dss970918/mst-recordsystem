@@ -1,0 +1,15 @@
+export enum EN_RECORD_TYPE {
+    UNKOWN = 'unknown',
+    COMMAND = 'cmd',
+    ASSERT_SELECTION = 'assert_selection',
+    MOUSE = 'mouse',
+    KEY = 'keyboard',
+    RESET_ACTION = 'reset_action',
+    WORK_PLANE = 'work_plane',
+    SWITCH_VIEW = 'switch_view',
+    USE_CAMERA_MODE = 'user_camera_mode',
+    CAMERA_MOVE = 'camera_move',
+    RESET_VISIBLE_LEVEL = 'reset_visible_level',
+    ELEMENT_PROPERTY_CHANGE = 'modeify_element',
+    ELEMENT_REGENERATED = 'element_regenerated',
+}

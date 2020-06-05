@@ -1,0 +1,10 @@
+{
+    "extends": "@jtl/q-tsconfig/tsconfig.types",
+    "compilerOptions": {
+        "declarationDir": "./types",
+        "outDir": "./tmp"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

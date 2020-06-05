@@ -1,0 +1,42 @@
+{
+    "name": "@jtl/picasso-testsuite",
+    "version": "2.0.0",
+    "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+    "keywords": [],
+    "author": "yaozhao <xiaodai@qq.com>",
+    "license": "ISC",
+    "main": "src/index.ts",
+    "publishConfig": {
+        "registry": "https://repos.jtl3d.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@116.62.100.239:jtl3d-faces/picasso-recordsystem.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1",
+        "prepublishOnly": "npx q-scripts ci",
+        "prepack": "npx q-scripts prepack"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "devDependencies": {
+        "@jtl/luna": "1.0.19",
+        "@jtl/picasso-core": "1.0.175",
+        "@jtl/q-scripts": "^3.0.31",
+        "@jtl/reflect-metadata": "0.1.13",
+        "@jtl/xmath": "0.1.351",
+        "@types/file-saver": "2.0.1",
+        "@types/jtlplugins": "1.0.221",
+        "@types/lodash": "4.14.155",
+        "eventemitter3": "4.0.4",
+        "file-saver": "2.0.2",
+        "inversify": "5.0.1",
+        "lodash": "4.17.15",
+        "reflect-metadata": "0.1.13"
+    },
+    "dependencies": {
+        "@types/webpack-env": "1.15.2"
+    }
+}

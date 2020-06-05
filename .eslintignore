@@ -1,0 +1,8 @@
+
+node_modules/
+tslint/
+dist/
+types/
+commitlint.config.js
+.eslintrc.js
+    

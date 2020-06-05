@@ -1,0 +1,23 @@
+{
+    "name": "@jtl/picasso-recordsystem",
+    "private": true,
+    "devDependencies": {
+        "lerna": "^3.22.0"
+    },
+    "main": "src/index.ts",
+    "workspaces": [
+        "packages/*"
+    ],
+    "lint-staged": {
+        "!(*.qconfig).{ts,tsx}": [
+            "npx q-scripts lint-fix",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npx q-scripts pretty-quick --staged && lint-staged",
+            "pre-push": "q lint-tsc"
+        }
+    }
+}
