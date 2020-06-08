@@ -18,7 +18,16 @@ export class TestSuiteReplayManagerPlugin implements jtlplugin.ITestSuiteReplayM
         let i = 0;
         for (const testCase of this._caseManager.currentCase?.steps!) {
             console.log(`回放中:(${++i}/${steps})`, testCase);
-            const stepResult = getPlayer(testCase.recordType as EN_RECORD_TYPE)(testCase);
+            let stepResult: any;
+            switch (testCase.value?.cmdName) {
+                case 'hdcmd.import_cad':
+                    stepResult = await getPlayer(testCase.recordType as EN_RECORD_TYPE)(testCase);
+                    break;
+                default:
+                    stepResult = getPlayer(testCase.recordType as EN_RECORD_TYPE)(testCase);
+                    break;
+            }
+
             if (stepResult instanceof Promise) {
                 await Bluebird.delay(1000);
             } else {
