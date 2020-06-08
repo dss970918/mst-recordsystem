@@ -1,0 +1,3 @@
+{
+    "extends": "@jtl/q-tsconfig/tsconfig.base"
+}
