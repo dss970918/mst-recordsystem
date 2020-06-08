@@ -3,6 +3,7 @@ export enum EN_RECORD_TYPE {
     COMMAND = 'cmd',
     ASSERT_SELECTION = 'assert_selection',
     MOUSE = 'mouse',
+    VIEW_CONTROLLER = 'view_controller',
     KEY = 'keyboard',
     RESET_ACTION = 'reset_action',
     WORK_PLANE = 'work_plane',
