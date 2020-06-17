@@ -1,1 +1,3 @@
-console.log('Hello World from Q');
+import { initApp } from './app';
+
+initApp();
