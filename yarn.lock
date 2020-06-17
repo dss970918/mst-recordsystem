@@ -1898,6 +1898,21 @@
     "@types/webpack" "*"
     "@types/webpack-dev-server" "*"
 
+"@types/react-dom@16.9.8":
+  version "16.9.8"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
+  integrity sha1-/kweEd/GcVVzPfpqplEItJcctCM=
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@16.9.36":
+  version "16.9.36"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/@types/react/-/react-16.9.36.tgz#ade589ff51e2a903e34ee4669e05dbfa0c1ce849"
+  integrity sha1-reWJ/1HiqQPjTuRmngXb+gwc6Ek=
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/react@^16.9.15":
   version "16.9.35"
   resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/@types/react/-/react-16.9.35.tgz#a0830d172e8aadd9bd41709ba2281a3124bbd368"
@@ -8471,7 +8486,7 @@ longest-streak@^2.0.1:
   resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/longest-streak/-/longest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
   integrity sha1-uFmZV9pbXatk3uP+MW+ndFl9kOQ=
 
-loose-envify@^1.4.0:
+loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
@@ -8959,6 +8974,28 @@ mkdirp@0.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.x:
   integrity sha1-2Rzv1i0UNsoPQWIOJRKI1CAJne8=
   dependencies:
     minimist "^1.2.5"
+
+mobx-react-lite@2:
+  version "2.0.7"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/mobx-react-lite/-/mobx-react-lite-2.0.7.tgz#1bfb3b4272668e288047cf0c7940b14e91cba284"
+  integrity sha1-G/s7QnJmjiiAR88MeUCxTpHLooQ=
+
+mobx-react@6.2.2:
+  version "6.2.2"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/mobx-react/-/mobx-react-6.2.2.tgz#45e8e7c4894cac8399bba0a91060d7cfb8ea084b"
+  integrity sha1-RejnxIlMrIOZu6CpEGDXz7jqCEs=
+  dependencies:
+    mobx-react-lite "2"
+
+mobx-state-tree@3.16.0:
+  version "3.16.0"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/mobx-state-tree/-/mobx-state-tree-3.16.0.tgz#814c5c87371ababc07d47bef3892ffa21d739e1d"
+  integrity sha1-gUxchzcaurwH1HvvOJL/oh1znh0=
+
+mobx@5.15.4:
+  version "5.15.4"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/mobx/-/mobx-5.15.4.tgz#9da1a84e97ba624622f4e55a0bf3300fb931c2ab"
+  integrity sha1-naGoTpe6YkYi9OVaC/MwD7kxwqs=
 
 modify-values@^1.0.0:
   version "1.0.1"
@@ -10344,7 +10381,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.7.2:
+prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -10536,7 +10573,7 @@ rc@^1.1.0:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dev-utils@^10.0.0:
+react-dev-utils@10.2.1, react-dev-utils@^10.0.0:
   version "10.2.1"
   resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/react-dev-utils/-/react-dev-utils-10.2.1.tgz#f6de325ae25fa4d546d09df4bb1befdc6dd19c19"
   integrity sha1-9t4yWuJfpNVG0J30uxvv3G3RnBk=
@@ -10565,6 +10602,16 @@ react-dev-utils@^10.0.0:
     shell-quote "1.7.2"
     strip-ansi "6.0.0"
     text-table "0.2.0"
+
+react-dom@16.13.1:
+  version "16.13.1"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
+  integrity sha1-wb03MxoEhsB47lTEdAcgmTsuDn8=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
 
 react-error-overlay@^6.0.7:
   version "6.0.7"
@@ -11225,6 +11272,14 @@ saxes@^3.1.9:
   integrity sha1-1Z0f0zLskq2YouCy7mRHAjhLHFs=
   dependencies:
     xmlchars "^2.1.1"
+
+scheduler@^0.19.1:
+  version "0.19.1"
+  resolved "https://repos.jtl3d.com/repository/jtl3d-npm-repo-group/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
+  integrity sha1-Tz4u0sGn1laB9MhU+oxaHMtA8ZY=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 schema-utils@^0.4.0, schema-utils@^0.4.5:
   version "0.4.7"
