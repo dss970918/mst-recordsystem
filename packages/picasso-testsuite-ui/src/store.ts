@@ -1,15 +1,21 @@
 import { createContext, useContext } from 'react';
 import { Instance } from 'mobx-state-tree';
-import { mstRoot } from './components/root';
+import { systemRoot } from './components/systemroot';
+import { snapshot as mainPageSnapShot } from './test/mainpage.snapshot';
+import { snapshot as testCaseSnapShot } from './test/testcase.snapshot';
 
 export function createMST() {
-    const store = mstRoot.create({
-        title: 'record system',
+    const store = systemRoot.create({
+        mainPageNode: mainPageSnapShot,
+        guideNode: {},
+        pageHeaderNode: { projectName: '111' },
+        testCaseNode: testCaseSnapShot,
+        menubarNode: { current: '1' },
     });
     return store;
 }
 
-type IRootInstance = Instance<typeof mstRoot>;
+type IRootInstance = Instance<typeof systemRoot>;
 
 const RootContext = createContext<null | IRootInstance>(null);
 

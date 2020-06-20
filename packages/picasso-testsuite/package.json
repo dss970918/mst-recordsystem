@@ -22,7 +22,7 @@
     "devDependencies": {
         "@jtl/luna": "1.0.19",
         "@jtl/picasso-core": "1.0.175",
-        "@jtl/q-scripts": "^3.0.31",
+        "@jtl/q-scripts": "3.0.32",
         "@jtl/reflect-metadata": "0.1.13",
         "@jtl/xmath": "0.1.351",
         "@types/file-saver": "2.0.1",
@@ -35,6 +35,8 @@
         "reflect-metadata": "0.1.13"
     },
     "dependencies": {
-        "@types/webpack-env": "1.15.2"
+        "@types/webpack-env": "1.15.2",
+        "antd": "4.3.4",
+        "webpack-dev-server": "3.10.3"
     }
 }

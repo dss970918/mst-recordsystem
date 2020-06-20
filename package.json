@@ -19,5 +19,8 @@
             "pre-commit": "npx q-scripts pretty-quick --staged && lint-staged",
             "pre-push": "q lint-tsc"
         }
+    },
+    "dependencies": {
+        "@ant-design/icons": "^4.2.1"
     }
 }

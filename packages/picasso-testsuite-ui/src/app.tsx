@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { RootUI } from './components/root.ui';
+import { RootUI } from './components/systemroot.ui';
 import { Provider } from './store';
 import { createMST } from './store';
 
