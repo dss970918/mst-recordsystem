@@ -17,7 +17,7 @@ export const TestCaseUI: React.FC = observer(() => {
                     className='testcase-select'
                     style={{ width: '80%', marginTop: '5px' }}
                     value={defaultTestCase}
-                    onChange={() => activeTestCase}>
+                    onChange={(e) => activeTestCase(e)}>
                     {testCaseList.map((t) => {
                         return (
                             <Option key={t.value} value={t.value}>
@@ -29,7 +29,7 @@ export const TestCaseUI: React.FC = observer(() => {
                 <PlusOutlined />
             </div>
             <div className='search'>
-                <Search style={{ width: '100%', marginTop: '20px' }} onSearch={() => console.log('1')} />
+                <Search style={{ width: '90%', marginTop: '20px' }} onSearch={() => console.log('1')} />
             </div>
         </div>
     );

@@ -23,7 +23,7 @@ export const GuideUI: React.FC = observer(() => {
                 <div className='foot'>
                     <div>
                         要了解有关selenium IDE的更多信息以及如何使用它，请访问
-                        <span> 脚本录制系统项目页面</span>
+                        <a href='#/system'> 脚本录制系统项目页面</a>
                     </div>
                 </div>
             </div>

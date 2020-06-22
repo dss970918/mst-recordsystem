@@ -1,5 +1,6 @@
 export const snapshot = {
     defaultUrl: 'defaultUrl',
+    defaultCommand: '播放',
     url: [
         { name: 'firstName', url: 'www.baidu.com' },
         { name: 'secondName', url: 'www.sougou.com' },

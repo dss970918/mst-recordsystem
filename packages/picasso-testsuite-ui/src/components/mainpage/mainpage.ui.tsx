@@ -17,18 +17,31 @@ export const MainPageUI: React.FC = observer(() => {
     const { Option } = Select;
     const { Search } = Input;
     const { mainPageNode } = useMst();
-    const { defaultUrl, url, activeUrl, columns, data } = mainPageNode;
+    const {
+        defaultUrl,
+        defaultCommand,
+        url,
+        columns,
+        data,
+        activeUrl,
+        activeCommand,
+        targetOnsearch,
+        play,
+        suspend,
+        record,
+    } = mainPageNode;
 
     return (
         <div className='main-page'>
             <div className='icons-list'>
-                <StepForwardOutlined className='icon' />
-                <CaretRightOutlined className='icon' style={{ marginLeft: '30px' }} onClick={() => alert(1)} />
-                <PullRequestOutlined className='icon' style={{ marginLeft: '30px' }} rotate={90} />
+                <StepForwardOutlined className='icon' onClick={play} />
+                <CaretRightOutlined className='icon' style={{ marginLeft: '30px' }} onClick={suspend} />
+                <PullRequestOutlined className='icon' style={{ marginLeft: '30px' }} rotate={90} onClick={record} />
                 <ClockCircleOutlined className='icon' style={{ marginLeft: '30px' }} />
             </div>
             <div className='icons-list-right'>
-                <StopOutlined className='icon' />
+                <a href='#/'>退出</a>
+                <StopOutlined className='icon' style={{ marginLeft: '20px' }} />
                 <PlayCircleOutlined className='icon' style={{ marginLeft: '20px' }} />
             </div>
             <div className='top-url'>
@@ -56,7 +69,8 @@ export const MainPageUI: React.FC = observer(() => {
                     <Select
                         className='command-select'
                         style={{ marginLeft: '40px', width: '300px' }}
-                        onChange={(e: any) => activeUrl(e)}>
+                        value={defaultCommand}
+                        onChange={(e: any) => activeCommand(e)}>
                         {data && data.length
                             ? data.map((o: any) => (
                                   <Option value={o.command} key={o.key}>
@@ -70,7 +84,7 @@ export const MainPageUI: React.FC = observer(() => {
                     <span className='span-name'>目标</span>
                     <Search
                         style={{ width: '300px', marginLeft: '40px', marginTop: '20px' }}
-                        onSearch={() => console.log('1')}
+                        onSearch={(e) => targetOnsearch(e)}
                     />
                 </div>
                 <div>
